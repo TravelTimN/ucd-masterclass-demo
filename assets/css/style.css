@@ -1,0 +1,84 @@
+:root {
+	--white: #ffffff;
+	--black: 0, 0, 0; /* #000000 */
+    --blue: 0, 0, 255; /* #0000ff */
+    --grey: rgba(var(--black), 0.5); /* re-use variables from above */
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	width: 100%;
+	background-color: red;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+nav {
+	height: 100%;
+	background-color: orange;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+main {
+	flex: 1 0 auto;
+	background-color: yellow;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+section {
+	background-color: green;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+article {
+	background-color: rgba(var(--blue), 1);
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+figure {
+	margin: 1em;
+	width: 50%;
+	background-color: purple;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+figure img {
+	width: 100%;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+footer {
+	flex-shrink: 0;
+	width: 100%;
+	background-color: violet;
+	color: var(--white);
+	text-shadow: 2px 2px 2px var(--grey);
+}
+
+*[class^="row"],
+*[class^="col"],
+*[class^="container"] {
+	margin: 0 auto;
+	padding: 0;
+}
